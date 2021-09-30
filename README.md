@@ -1,8 +1,6 @@
-# curriculum-databases-projects-template
+# Vet Database SQL
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
-
+This is a database created using PostgreSQL for a vet room.
 
 ## Getting Started
 
@@ -15,17 +13,14 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ## Authors
 
-👤 **Author1**
+👤 **Stephan Annandale**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Github: [@sneeu-leeu](https://github.com/sneeu-leeu)
 
-👤 **Author2**
+- Twitter: [@Stephan07484055](https://twitter.com/Stephan07484055)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [Stephan Annandale](https://www.linkedin.com/in/stephan-annandale-a4b4931a9/)
+
 
 ## 🤝 Contributing
 
