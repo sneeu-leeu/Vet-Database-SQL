@@ -45,16 +45,19 @@ CREATE TABLE vets (
 );
 
 CREATE TABLE specializations (
-  id INT GENERATED ALWAYS AS IDENTITY,
-  species_id INT REFERENCES species(id),
-  vet_id INT REFERENCES vets(id),
-  PRIMARY KEY(id)
+  species_id  INT,
+  vets_id     INT,
+  FOREIGN KEY (species_id) REFERENCES species (id),
+  FOREIGN KEY (vets_id) REFERENCES vets (id),
+  PRIMARY KEY (species_id, vets_id)
 );
 
 CREATE TABLE visits (
-  id INT GENERATED ALWAYS AS IDENTITY,
-  animal_id INT REFERENCES animals(id),
-  vet_id INT REFERENCES vets(id),
-  date_of_visit DATE,
-  PRIMARY KEY(id)
+    animals_id  INT,
+    vets_id     INT,
+    date_of_visit DATE,
+    id INT GENERATED ALWAYS AS IDENTITY,
+    FOREIGN KEY (animals_id) REFERENCES animals (id),
+    FOREIGN KEY (vets_id) REFERENCES vets (id),
+    PRIMARY KEY (id)
 );
