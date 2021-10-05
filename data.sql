@@ -51,3 +51,36 @@ UPDATE animals SET owner_id = 2 WHERE name IN ('Gabumon', 'Pikachu');
 UPDATE animals SET owner_id = 3 WHERE name IN ('Devimon', 'Plantmon');
 UPDATE animals SET owner_id = 4 WHERE name IN ('Charmander', 'Squirtle', 'Blossom');
 UPDATE animals SET owner_id = 5 WHERE name IN ('Angemon', 'Boarmon');
+
+/* joint table - visits */
+
+INSERT INTO vets (name, age, date_of_graduation) VALUES ('William Tatcher', 45, '2000-04-23');
+INSERT INTO vets (name, age, date_of_graduation) VALUES ('Maisy Smith', 26, '2019-01-17');
+INSERT INTO vets (name, age, date_of_graduation) VALUES ('Stephanie Mendez', 64, '1981-05-04');
+INSERT INTO vets (name, age, date_of_graduation) VALUES ('Jack Harkness', 38, '2008-06-08');
+
+INSERT INTO specializations (vet_id, species_id) VALUES (1, 1);
+INSERT INTO specializations (vet_id, species_id) VALUES (3, 2);
+INSERT INTO specializations (vet_id, species_id) VALUES (3, 1);
+INSERT INTO specializations (vet_id, species_id) VALUES (4, 2);
+
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (1, 1, 'May 24, 2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (1, 3, 'Jul 22, 2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (2, 4, 'Feb 2, 2021');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (3, 2, 'Jan 5, 2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (3, 2, 'Mar 8, 2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (3, 2, 'May 14, 2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (4, 3, 'May 4, 2021');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (5, 4, 'Feb 24, 2021');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (6, 2, 'Dec 21, 2019');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (6, 1, 'Aug 10, 2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (6, 2, 'Apr 7, 2021');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (7, 3, 'Sep 29, 2019');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (8, 4, 'Oct 3, 2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (8, 4, 'Nov 4, 2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (9, 2, 'Jan 24, 2019');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (9, 2, 'May 15, 2019');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (9, 2, 'Feb 27, 2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (9, 2, 'Aug 3, 2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (10, 3, 'May 24, 2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (10, 1, 'Jan 11, 2021');
