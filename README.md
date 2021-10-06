@@ -2,6 +2,8 @@
 
 This is a database created using PostgreSQL for a vet room.
 
+![DataBase Diagram](./img/vet_clinic_psql_diagram.png)
+
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
